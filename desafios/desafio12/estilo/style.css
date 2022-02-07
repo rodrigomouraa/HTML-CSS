@@ -7,16 +7,19 @@
 * {
     margin: 0px;
     padding: 0px;
+    font-size: 1em;
 }
 
 :root{
-    --fonte-padrao: 'Sriracha', 'cursive';
-    --fonte-destaque: 'Passion One', 'cursive';
+    --fonte-1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte-2: 'Passion One', 'cursive';
+    --fonte-3: 'Sriracha', 'cursive';
 }
 
 html, body {
     min-height: 100vh;
     background-color: darkgray;
+    font-family: var(--fonte-1);
 }
 
 header {
@@ -26,8 +29,8 @@ header {
 }
 
 header > h1 {
-    font-family: var(--fonte-destaque);
-    font-size: 136px;
+    font-family: var(--fonte-2);
+    font-size: 10vw;
     font-weight: bold;
     padding-top: 50px;
     font-variant: small-caps;
@@ -48,8 +51,8 @@ header a:hover, footer a:hover {
 }
 
 section {
-    font-family: var(--fonte-padrao);
-    font-size: 47px;
+    font-family: var(--fonte-3);
+    font-size: 3.5vw;
     padding-top: 10vh;
     padding-bottom: 10vh;
     line-height: 2em;
@@ -59,7 +62,6 @@ section {
 section.normal {
     background-color: white;
     color: black;
-    font-family: var(--fonte-padrao);
 }
 
 section.imagem {
@@ -68,8 +70,9 @@ section.imagem {
 }
 
 section.imagem > p {
+    display: inline-block;
+    padding: 5px;
     background-color: rgba(0, 0, 0, 0.253);
-    width: 400px;
 }
 
 footer {
